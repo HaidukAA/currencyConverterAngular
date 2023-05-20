@@ -1,0 +1,21 @@
+<div class="main-container">
+    <div class="selection-container">
+        <input min="1" type="text" [(ngModel)]="amount" (input)="convert()" required>
+        <select #c1 name="" id="country1" (change)="changeBase(c1.value)" [(ngModel)]="base" required>
+            <option value="UAH">Ukranian hryvnia</option>
+            <option value="USD">US dollar</option>
+            <option value="EUR">Euro</option>
+        </select>
+
+        <p>  = </p>
+  
+        <input type="text" [(ngModel)]="result" (input)="convertBack()" min="1" required>
+        <select #c2 name="" id="country1" (change)="toCountry(c2.value)" [(ngModel)]="cont2" required>
+            <option value="USD">US dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="UAH">Ukranian hryvnia</option>
+        </select>
+    </div>
+
+    <button (click)="reverseCurrencies()">Reverse</button>
+</div>

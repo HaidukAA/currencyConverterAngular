@@ -1,0 +1,14 @@
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #efefef;
+    width: 600px;
+    height: auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
