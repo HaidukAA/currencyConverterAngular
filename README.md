@@ -1,32 +1,13 @@
-<<<<<<< HEAD
-# Converter
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# currencyConverterAngular
-currencyConverterAngular
->>>>>>> fd27a786bdf2a52c6946ff7c26f09a4b0daf27a7
+Конвертер валют
+Описание
+1.	Header с курсом валют
+  a.	В header-е необходимо отображать актуальный курс валют (USD, EUR) по отношению к гривне (UAH)
+  b.	Актуальный курс валют должен приходить с любого публичного API
+2.	Компонент с конвертацией
+  a.	Для одной валюты должен быть свой input и select. 
+  b.	отдельный input + select для первой валюты, и отдельный input + select для второй валюты
+  c.	в input задается число, чтобы указать кол-во единиц для конвертирования
+  d.	в select должно быть не менее трех валют - UAH, USD, EUR.
+  e.	конвертация должна происходить в обоих направлениях 
+  i.	при изменении значения в первой валюте, должно пересчитываться значение во второй, и наоборот
+  ii.	при изменении валюты в каждом select-е, конвертация обеих валют должна пересчитываться корректно
